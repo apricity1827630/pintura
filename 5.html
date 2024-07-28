@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index5.css">
+    <link rel="stylesheet" href="css/index5m.css">
+    <link rel="stylesheet" href="css/index5mm.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/9c327b26c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="btn_area">
+                <h1><a href="4.html" class="btn_back"></a></h1>
+            </div>
+            <div class="elipse">
+                <div class="on"></div>
+                <div class="on"></div>
+                <div class="on"></div>
+                <div class="on"></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <div class="text_area">
+            <p class="text">어떤 방향의 그림이 좋으세요?</p>
+        </div>
+        <div class="main_btn">
+            <h2>원하시는 방향을 모두 골라주세요.</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <figure><img src="img/figure1.png" alt=""></figure>
+                        <span>가로가 좋아요!</span>
+                    </a>
+    
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="img/figure1.png" alt=""></figure>
+                        <span>세로가 좋아요!</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="change">
+                    <a href="#">
+                        <figure><img src="img/change.png" alt=""></figure>
+                        <span>바꿀수 있는게 좋아요!</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="img/variety.png" alt=""></figure>
+                        <span>다양한게 좋아요!</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <a href="6.html">바로 이 모양이에요!</a>
+    </footer>
+    <script>
+        $(function() {
+            $('.main_btn ul li').on('click', function(e) {
+                e.preventDefault(); 
+                let $this = $(this);
+                
+                if ($this.hasClass('on')) {
+                    $this.removeClass('on'); 
+                } else {
+                    $this.addClass('on'); 
+                }
+            });
+        });
+    </script>
+</body>
+</html>

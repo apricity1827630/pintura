@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="css/index1m.css">
+    <link rel="stylesheet" href="css/index1mm.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="btn_area">
+                <h1><a href="index.html" class="btn_back"></a></h1>
+            </div>
+            <div class="elipse">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <div class="text_area">
+            <p class="text">그림이 생긴다면?</p>
+            <p class="text">그림을 통해 연출하고 싶은</p>
+            <p class="text">공간의 분위기는?</p>
+        </div>
+        <div class="main_btn">
+            <h2>어느 공간에 그림을 배치하고 싶나요?</h2>
+            <ul class="btn">
+                <li>
+                    <a href="#">
+                        <figure><img src="images/1.png" alt=""></figure>
+                        <ul>
+                            <li class="title">복도</li>
+                            <li>우리집을 갤러리로!</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="images/2.png" alt=""></figure>
+                        <ul>
+                            <li class="title">안방</li>
+                            <li>잠들기전 힐링!</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="images/3.png" alt=""></figure>
+                        <ul>
+                            <li class="title">사무실</li>
+                            <li>쾌적한 업무공간으로!</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="images/4.png" alt=""></figure>
+                        <ul>
+                            <li class="title">놀이방</li>
+                            <li>우리 아이 창의력을 위해!</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="images/5.png" alt=""></figure>
+                        <ul>
+                            <li class="title">거실</li>
+                            <li>인테리어 필수 아이템!</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="images/6.png" alt=""></figure>
+                        <ul>
+                            <li class="title">그외 공간</li>
+                            <li>보기에 없어요!</li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <a href="2.html">바로 여기에요!</a>
+    </footer>
+    <script>
+        $(function(){
+            const btn = document.querySelector('.btn > li > a')
+            btn.on('mouseover', function(){
+                if ($(this).hasClass('on')){
+                    return
+                }
+                btn.removeClass('on')
+                $(this).addClass('on')
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index3.css">
+    <link rel="stylesheet" href="css/index3m.css">
+    <link rel="stylesheet" href="css/index3mm.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="btn_area">
+                <h1><a href="2.html" class="btn_back"></a></h1>
+            </div>
+            <div class="elipse">
+                <div class="on"></div>
+                <div class="on"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <div class="text_area">
+            <p class="text">
+                그림의 크기는 0호부터 60호까지<br>
+                준비되어 있습니다.<br>
+                0호는 약 18&times;14(cm)이며,<br>
+                60호는 약 130&times;90(cm)입니다.<br>
+                아래 박스에 체크해주세요.ㄴ
+            </p>
+        </div>
+        <div class="main_btn">
+            <figure>
+                <img src="images/picture.png" alt="">
+            </figure>
+            <h2>어느 정도 크기의 그림을 원하시나요?</h2>
+            <form>
+                <input type="checkbox" value="20" id="pic20">
+                <label for="pic20">20호</label>
+                <input type="checkbox" value="40" id="pic40">
+                <label for="pic40">40호</label>
+                <input type="checkbox" value="60" id="pic60">
+                <label for="pic60">60호</label>
+            </form>
+            <div class="desc_pic">
+                <img src="img/20.png" alt="" class="pic1">
+                <img src="img/20~40.png" alt="" class="pic2">
+                <img src="img/40~60.png" alt="" class="pic3">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="4.html">딱 이정도요!</a>
+    </footer>
+    <script>
+        const picon1 = document.querySelector('.pic1')
+        const picon2 = document.querySelector('.pic2')
+        const picon3 = document.querySelector('.pic3')
+        const btn20 = document.querySelector('#pic20')
+        const btn40 = document.querySelector('#pic40')
+        const btn60 = document.querySelector('#pic60')
+
+
+
+        btn20.addEventListener("click", function() { 
+            picon1.classList.toggle('on'); 
+        })
+        btn40.addEventListener("click", function() { 
+            picon2.classList.toggle('on'); 
+        })
+        btn60.addEventListener("click", function() { 
+            picon3.classList.toggle('on'); 
+        })
+
+    </script>
+</body>
+</html>

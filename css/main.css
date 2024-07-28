@@ -1,0 +1,278 @@
+@charset "utf-8";
+@media screen and (max-width: 600px) {
+
+    @font-face {
+        font-family: 'InkLipquid';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'EF_watermelonSalad';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_watermelonSalad.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+    
+    body {
+        max-width: 600px; 
+        margin: 0 auto;
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    }
+    header {
+        width: 100%;
+        height: 60vh;
+        background: url(../main_img/main01.png) no-repeat bottom/cover;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    h2 {
+        font-size: 22px;
+        margin: 0 2.5% 20px;
+        
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: center;
+        vertical-align: middle;
+        margin-bottom: 400px;
+        z-index: 10;
+    }
+    .top .logo_area {}
+    .top .logo_area a {
+        background: url(../main_img/ico/logo.png) no-repeat center/cover;
+        display: block;
+        width: 130px;
+        height: 75px;
+    }
+    .top .tnb_area {
+        width:80px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .top .tnb_area a {
+        display: block;
+    }
+    .top .tnb_area a img {
+        width: 34px;
+        height: 34px;
+    }
+    /* head top */
+    .bot {
+        padding: 30px 40px 20px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+    }
+    .bot .btn_area {
+        width: 100%;
+    }
+    .bot .btn_area .title {
+        color: #fff;
+        font-size: 26px;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+        font-weight: 600;
+    }
+    .bot .btn_area .btn {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+        position: relative;
+        width: 90%;
+    }
+    .bot .btn_area .btn::before {
+        position: absolute;
+        content: '';
+        bottom: -20px;
+        left: 0;
+        width: 30%;
+        height: 2px;
+        background: rgba(255, 255, 255, 1);
+        z-index: 5;
+    }
+    .bot .btn_area .btn::after {
+        position: absolute;
+        content: '';
+        bottom:-20px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+    }
+    .bot .play {
+        position: absolute;
+        bottom:-10px;
+        right: 40px;
+        width: 22px;
+        height: 22px;
+        display: block;
+    }
+    .bot .play img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+    }
+    
+    
+    /* main - cont01 */
+    main div.cont01 {
+        background: url(../main_img/main02.png) no-repeat center/cover;
+        color: white;
+        padding: 30px 2.5%;
+        margin-bottom: 100px;
+    }
+    main div.cont01 h2 {
+        font-family: 'InkLipquid';
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    main div.cont01 div.text_area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+    main div.cont01 div.text_area span {
+        padding: 8px 20px;
+        border-radius: 50px;
+        border: 1px solid white;
+    
+    }
+    
+    /* main - cont02 */
+    div.cont02 {
+        margin-bottom: 100px;
+    }
+    div.cont02 .inner {
+        margin: 0 2.5%;
+    }
+    div.cont02 p {
+        font-size: 18px;
+        width: 200px;
+    }
+    div.cont02 p span {
+        color: #ffa574;
+        font-weight: 600;
+    }
+    div.cont02 h2 span {
+        color: #ffa574;
+        font-weight: 600;
+    }
+    div.cont02 figure {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    div.cont02 figure img {
+        width: 100%; height: 100%;
+        overflow: hidden;
+    }
+    
+    /* cont03 */
+    div.cont03  {
+        margin-bottom: 100px;
+    }
+    div.cont03 .inner {
+        margin: 0 2.5%;
+    }
+    div.cont03 div.swiper-slide {
+        background-color: #ffa574;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+    div.cont03 div.swiper-slide div.text_area {
+        font-size: 17px;
+    }
+    div.cont03 div.swiper-slide div.slide01 {
+        width: 100%;
+    }
+    div.cont03 div.swiper-slide div.text_area p.bold {
+        font-weight: 500;
+    }
+    div.cont03 div.swiper-slide div.text_area p.text {
+        font-weight: 400;
+    }
+    div.cont03 div.swiper-slide figure {
+        width: 70px; height: 70px;
+    }
+    div.cont03 div.swiper-slide figure img {
+        width: 100%; height: 100%;
+        overflow: hidden;
+    }
+    
+    /* main - cont04 */
+    div.cont04 {
+        margin-bottom: 150px;
+    }
+    div.cont04 .inner {
+        margin: 0 2.5%;
+    }
+    div.cont02 div.title_area,
+    div.cont03 div.title_area,
+    div.cont04 div.title_area {
+        position: relative;
+    }
+    div.cont02 div.title_area > span,
+    div.cont03 div.title_area span,
+    div.cont04 div.title_area span {
+        font-family: 'InkLipquid';
+        font-size: 25px;
+        position: absolute;
+        right: 20px; top: 50%; transform: translateY(-50%);
+        color: #69472f;
+    }
+    div.cont04 ul.faq {
+        background-color: #fdf9f6;
+        padding: 10px 30px;
+    }
+    div.cont04 ul.faq li {
+        padding: 10px 0;
+    }
+    div.cont04 ul.faq li+li {
+        border-top: 1px solid #dfd5ce;
+    }
+    div.cont04 ul.faq li span {
+        font-size: 25px;
+        font-family: 'InkLipquid';
+        color: #69472f;
+        margin-right: 10px;
+    }
+    
+    
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px; width: 100%;
+        position: fixed;
+        bottom: 0;
+        background: white;
+        border-top: 1px solid #e6e6e6;
+        padding: 10px 20px 15px;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+    footer img {
+        width: 35px;
+        height: 35px;
+    }
+
+}
+

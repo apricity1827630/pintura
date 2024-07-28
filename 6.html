@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index6.css">
+    <link rel="stylesheet" href="css/index6m.css">
+    <link rel="stylesheet" href="css/index6mm.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="btn_area">
+                <h1><a href="5.html" class="btn_back"></a></h1>
+            </div>
+            <div class="elipse">
+                <div class="on"></div>
+                <div class="on"></div>
+                <div class="on"></div>
+                <div class="on"></div>
+                <div class="on"></div>
+                <div></div>
+            </div>
+        </header>
+        <div class="text_area">
+            <p class="text">
+                액자와 함께 디자인 해드릴까요?
+            </p>
+        </div>
+        <div class="main_btn">
+            <h2>액자 디자인은 받아보시기 전 선택하실 수 있어요. </h2>
+            <div class="desc_pic">
+                <div class="btn1">
+                    <a href="#" class="pic1" onclick="on1()">
+                        <img src="img/right.jpg" alt="" id="pic1">
+                        <div class="text">
+                            <p>네!</p>
+                            <span>완성된 디자인을 원해요.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn2">
+                    <a href="#" class="pic2" onclick="on2()">
+                        <img src="img/reverse.jpg" alt="" id="pic2">
+                        <div class="text">
+                            <p>아니요!</p>
+                            <span>직접 꾸며볼래요.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="main.html">딱 이정도요!</a>
+    </footer>
+    <script>
+        function on1() {
+            const pic1 = document.getElementById("pic1");
+            let pic1on = "img/right_on.jpg";
+            let pic1off = "img/right.jpg";
+            event.preventDefault();
+            if (pic1.src.includes("_on")) {
+                pic1.src = pic1off;
+            } else {
+                pic1.src = pic1on;
+            }
+        }
+
+        function on2() {
+            const pic2 = document.getElementById("pic2");
+            let pic2on = "img/reverse_on.jpg";
+            let pic2off = "img/reverse.jpg";
+            event.preventDefault();
+            if (pic2.src.includes("_on")) {
+                pic2.src = pic2off;
+            } else {
+                pic2.src = pic2on;
+            }
+        }
+    </script>
+</body>
+</html>

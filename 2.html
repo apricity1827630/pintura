@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/index2m.css">
+    <link rel="stylesheet" href="css/index2mm.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="btn_area">
+                <h1><a href="1.html" class="btn_back"></a></h1>
+            </div>
+            <div class="elipse">
+                <div class="on"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <div class="text_area">
+            <p class="text">선호하는 그림의 테마는?</p>
+        </div>
+        <div class="main_btn">
+            <h2>마음에 드는 보기를 모두 골라주세요!</h2>
+            <ul class="btn ul1">
+                <li class="left"><a href="#">#일러스트레이터</a></li>
+                <li><a href="#">#종교</a></li>
+            </ul>
+            <ul class="btn ul2">
+                <li><a href="#">#풍경화</a></li>
+                <li><a href="#">#인물화</a></li>
+                <li><a href="#">#동물화</a></li>
+            </ul>
+            <ul class="btn ul3">
+                <li><a href="#">#정물화</a></li>
+                <li class="right"><a href="#">#드로잉/습작</a></li>
+            </ul>
+            <ul class="btn ul4">
+                <li><a href="#">#추상화</a></li>
+                <li><a href="#">#포스터</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <a href="3.html">바로 이거에요!</a>
+    </footer>
+    <script>
+        $(function() {
+    $('.btn li a').on('click', function(e) {
+        e.preventDefault(); 
+        let $this = $(this);
+        
+        if ($this.hasClass('on')) {
+            $this.removeClass('on'); 
+        } else {
+            $this.addClass('on'); 
+        }
+    });
+});
+    </script>
+</body>
+</html>
